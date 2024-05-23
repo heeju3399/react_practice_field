@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import HeejuMain from './heeju/HeejuMain.tsx';
 
 import MainPage from './MainPage.tsx';
-import 신교적메인 from './heeju/신교적/App';
+import 신교적메인 from './heeju/new_s/App.tsx';
 
 function App() {
   return (
