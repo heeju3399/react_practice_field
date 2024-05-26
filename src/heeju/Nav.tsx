@@ -82,7 +82,6 @@ export default function NavPage({ setPage, setIsClosing, setMobileOpen, mobileOp
             <Box
                 component="nav"
                 sx={{ width: { sm: drawerWidth }, flexShrink: { sm: 0 } }}
-                aria-label="mailbox folders"
             >
                 <Drawer
                     variant="temporary"
@@ -103,7 +102,7 @@ export default function NavPage({ setPage, setIsClosing, setMobileOpen, mobileOp
                     variant="permanent"
                     sx={{
                         display: { xs: 'none', sm: 'block' },
-                        '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
+                         '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth }
                     }}
                     open
                 >

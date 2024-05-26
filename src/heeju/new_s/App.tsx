@@ -1,7 +1,7 @@
 import React, { useState } from "react";
+import { createTheme, ThemeProvider, Grid, Box, CssBaseline, AppBar, Toolbar } from "@mui/material";
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { createTheme, ThemeProvider, Grid, Box, CssBaseline, AppBar, Toolbar } from "@mui/material";
 import Tabs from "./components/Tabs/TopTabs";
 import Sidebar from "./components/Sidebar";
 import Header from "./components/Header";
@@ -14,7 +14,7 @@ const theme = createTheme({
   },
 });
 
-function 신교적메인() {
+function SSProject() {
   return (
     <ThemeProvider theme={theme}>
 
@@ -42,4 +42,4 @@ function 신교적메인() {
   );
 }
 
-export default 신교적메인;
+export default SSProject;

@@ -109,7 +109,7 @@ const Sidebar = () => {
         {/* 대제목 */}
         <p style={{ fontSize: "1.2rem", textAlign: "center", padding:20 }}
            onClick={() => handleHomeClick()}>
-          SCJ 행정시스템
+          SSS 행정시스템
         </p>
         <CustomDivider />
 
