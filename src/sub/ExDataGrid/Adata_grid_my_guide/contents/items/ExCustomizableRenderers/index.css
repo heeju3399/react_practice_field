@@ -1,0 +1,19 @@
+.selectCellClassname {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.selectCellClassname > .input {
+  margin: 0;
+}
+
+.sortPriorityClassname {
+  color: grey;
+  margin-left: 2px;
+}
+
+.fill-grid789{
+  block-size: 100%;
+  width: 600px;
+}

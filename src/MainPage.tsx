@@ -13,14 +13,15 @@ export default function MainPage() {
         <h2>Router</h2>
         <ul>
           <li style={myStyle}>
-            <NavLink to="/heeju_main">{text("heeju react page 1")}</NavLink>
+            <NavLink to="/main">{text("page 1 ")}</NavLink>
           </li>
           <li style={myStyle}>
-            <NavLink to="/heeju_sub">{text("heeju react page 2")}</NavLink>
+            <NavLink to="/sub">{text("page 2 (sub)")}</NavLink>
           </li>
-          <li style={myStyle}>
-            <NavLink to="/newproject">{text("ssss")}</NavLink>
-          </li>
+
+          {/* <li style={myStyle}>
+            <NavLink to="/movieapp">{text("movieApp")}</NavLink>
+          </li> */}
           {/* <NavLink to="/**">**</NavLink> */}
         </ul>
       </div>

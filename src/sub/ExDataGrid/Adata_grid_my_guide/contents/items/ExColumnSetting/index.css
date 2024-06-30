@@ -1,0 +1,14 @@
+.selectCellClassname993 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.selectCellClassname993 > .input {
+  margin: 0;
+}
+
+.sortPriorityClassname993 {
+  color: grey;
+  margin-left: 2px;
+}

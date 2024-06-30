@@ -1,0 +1,30 @@
+.fill-grid-basic-demo-main-page {
+  block-size: 100%;
+  width: 1500px;
+}
+
+.toolbarClassnameOfbasicDemoMainPage {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-block-end: 8px;
+}
+
+.dialogContainerClassnameOfbasicDemoMainPage {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  place-items: center;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.dialogContainerClassnameOfbasicDemoMainPage > dialog {
+  width: 300px;
+}
+.dialogContainerClassnameOfbasicDemoMainPage > dialog > input {
+  width: 100%;
+}
+
+.dialogContainerClassnameOfbasicDemoMainPage > dialog > input > menu {
+  text-align: end;
+}

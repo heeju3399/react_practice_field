@@ -1,0 +1,43 @@
+{
+  "coord": {
+    "lon": 128.85,
+    "lat": 35.1
+  },
+  "weather": [
+    {
+      "id": 800,
+      "main": "Clear",
+      "description": "맑음",
+      "icon": "01d"
+    }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 16.98,
+    "feels_like": 16.27,
+    "temp_min": 16.98,
+    "temp_max": 18.06,
+    "pressure": 1020,
+    "humidity": 59
+  },
+  "visibility": 10000,
+  "wind": {
+    "speed": 0.51,
+    "deg": 230
+  },
+  "clouds": {
+    "all": 0
+  },
+  "dt": 1713055952,
+  "sys": {
+    "type": 1,
+    "id": 8086,
+    "country": "KR",
+    "sunrise": 1713041621,
+    "sunset": 1713088538
+  },
+  "timezone": 32400,
+  "id": 1979031,
+  "name": "Seolman",
+  "cod": 200
+}

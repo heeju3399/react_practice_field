@@ -1,0 +1,28 @@
+.fill-grid {
+  height: 100%;
+  block-size: 100%;
+}
+
+.나다 {
+  height: 100px;
+}
+
+.index_css클래스이름 {
+  height: 100%;
+  background-color: blue;
+  width: 500px;  
+  border: 1px solid red;
+  text-align: end;
+}
+
+.headerCellClass{
+  background-color: aqua;
+}
+
+.summaryCellClass{
+  background-color: gold;
+}
+
+.cellClass{
+  background-color: blue;
+}

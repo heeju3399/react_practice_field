@@ -1,0 +1,54 @@
+.rangeClassname {
+  display: flex;
+  justify-content:  right;
+  align-items: center;
+  gap: 18px;
+  font-size: 2rem;
+  margin-bottom: 8px;  
+  text-align: center;
+  width: 700px;
+  
+}
+
+.transitionClassname {
+  cursor:pointer;
+  block-size: 100%;
+  inline-size: 100%;
+  display: grid;
+  text-align: center;
+  color: yellow;
+  /* transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: linear; */
+  transition: grid-template-rows 0.5s ease;
+  /* 아 grid-template-rows  */
+  /* grid-template-columns: 1fr 1fr 1fr // 1:1:1 비율로 그리드 열 방향 트랙 설정 */
+  /* grid-template-rows: repeat(3, 1fr); // 1fr 비율로 3번 반복해서 행 방향 트랙 설정 */
+  /* transition: 0.5s linear; 이거 사용하니까 깨짐 titile 이 너무 커짐.. 왜지?? 음  */
+  /* ease :  기본값. 느리게 시작하여 점점 빨라졌다가 느리지면서 종료한다. */
+  /* linear : 	시작부터 종료까지 등속 운동을 한다. */
+}
+
+.testOfHover:hover {
+  background-color: darkcyan;
+  color: aqua;
+  transition: 1.5s ease;
+  cursor:pointer;
+}
+/* div:hover {
+  width: 300px;
+} */
+
+.ExAnimation_headerCellClass {
+  background-color: blueviolet;
+  transition: 0.5s ease;
+  /* width: 100px; */
+}
+/* 
+.transitionClassname > .rdg-header-row {
+  transition: grid-template-rows 0.5s ease;
+}
+
+.transitionClassname > .rdg-header-row > .rdg-row {
+  transition: grid-template 0.5s ease;
+} */

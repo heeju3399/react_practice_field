@@ -1,0 +1,10 @@
+colSpan(arg) {
+      console.log('==============colspan==========', arg);//{type: 'ROW', row: 0~} 이렇게 들어옴
+      if (arg.type === 'HEADER') {        
+        return 10;
+      } else if(arg.type === 'SUMMARY'){
+        return 20;
+      }else{
+        return 30;
+      }
+    },

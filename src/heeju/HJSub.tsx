@@ -67,7 +67,7 @@ export default function HeejuSub() {
             allowScrollButtonsMobile
           >
             <Tab label="home" href="/" />
-            <Tab label="별코딩" {...a11yProps(0)} />
+            <Tab label="별코딩" />
             <Tab label="생활코딩" {...a11yProps(1)} />
             <Tab label="Item Three" {...a11yProps(2)} />
             <Tab label="3" {...a11yProps(3)} />
@@ -78,7 +78,7 @@ export default function HeejuSub() {
         </Box>
         <CustomTabPanel value={value} index={0}></CustomTabPanel>
         <CustomTabPanel value={value} index={1}>
-          ddd1211
+          별코딩 페이지
         </CustomTabPanel>
         <CustomTabPanel value={value} index={2}>
           Item Three
