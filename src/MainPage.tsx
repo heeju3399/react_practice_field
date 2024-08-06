@@ -19,9 +19,11 @@ export default function MainPage() {
             <NavLink to="/sub">{text("page 2 (sub)")}</NavLink>
           </li>
 
-          {/* <li style={myStyle}>
-            <NavLink to="/movieapp">{text("movieApp")}</NavLink>
-          </li> */}
+          <li style={myStyle}>
+            <NavLink to="/modern_react_deepdive">
+              {text("modern.react.deepdive")}
+            </NavLink>
+          </li>
           {/* <NavLink to="/**">**</NavLink> */}
         </ul>
       </div>

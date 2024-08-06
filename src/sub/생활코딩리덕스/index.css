@@ -1,12 +1,17 @@
 #container,
-#container>div div {
-    border: 5px solid red;
-    margin: 10px;
-
+#container > div div {
+  border: 5px solid red;
+  margin: 10px;
 }
 
 #grid {
-    display: grid;
-    grid-template: 1fr / 1fr 1fr 1fr;
+  display: grid;
+  grid-template: 1fr / 1fr 1fr 1fr;
+}
 
+.root99,
+.root99 div {
+  border: 10px solid gray;
+  margin: 10px;
+  padding: 10px;
 }

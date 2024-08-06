@@ -64,7 +64,7 @@ function SimpleContainer() {
   return (
     <React.Fragment>
       <Container maxWidth="sm">
-        <Box sx={{ bgcolor: "#cfe8fc", height: "10vh" }} />
+        <Box sx={{ bgcolor: "#cfe", height: "10vh" }} />
       </Container>
     </React.Fragment>
   );

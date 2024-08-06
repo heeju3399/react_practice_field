@@ -8,13 +8,7 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import ListSubheader from "@mui/material/ListSubheader";
-import ExUseContext from "./ExUseContext";
-import ExUseReDucer from "./Exusereducer";
-import ExRedux from "./index";
-import 유즈콘텍스트사용해보기 from "./유즈콘텍스트사용해보기";
-import 유즈리덕설사용해보기 from "./유즈리덕설사용해보기";
-import Box from "@mui/material/Box";
-import MyUseContextGo from "./유즈콘텍스트4";
+import { exStarCodingItems } from "./ExStarCodingItems";
 
 type TypeNavListItem = {
   id: number;
@@ -26,6 +20,8 @@ type TypeNavList = {
   setPageIndex: React.Dispatch<React.SetStateAction<number>>;
 };
 
+let selected = 0;
+
 function NavListItem({ id, title, setPageIndex }: TypeNavListItem) {
   return (
     <>
@@ -36,10 +32,13 @@ function NavListItem({ id, title, setPageIndex }: TypeNavListItem) {
           "&:hover": {
             backgroundColor: "yellow",
           },
+          //해당 클릭했을때 아이디 가 맞는지 확인후
+          backgroundColor: selected === id ? "yellow" : "whtie",
           height: "30px",
         }}
         onClick={() => {
           console.log("title : ", title, id);
+          selected = id;
           setPageIndex(id);
         }}
       >
@@ -58,27 +57,11 @@ function NavListItem({ id, title, setPageIndex }: TypeNavListItem) {
   );
 }
 
-export default function ExLifeCodingMain() {
+export default function ExStarCodingNav({ setPageIndex }: TypeNavList) {
   const [openUtil, setUtilOpen] = React.useState(true);
   const handleUtilClick = () => {
     setUtilOpen(!openUtil);
   };
-
-  const [pageIndex, setPageIndex] = React.useState(0);
-  const drawerWidth: number = 230;
-
-  const arrayList = [
-    { id: 0, title: "ExUseContext", content: <ExUseContext /> },
-    { id: 1, title: "ExUseReDucer", content: <ExUseReDucer /> },
-    { id: 2, title: "Real_ExRedux_!!", content: <ExRedux /> },
-    {
-      id: 3,
-      title: "유즈콘텍스트사용해보기",
-      content: <유즈콘텍스트사용해보기 />,
-    },
-    { id: 4, title: "유즈리덕설사용해보기", content: <유즈리덕설사용해보기 /> },
-    { id: 5, title: "유즈 콘텍스트 크리에이트", content: <MyUseContextGo /> },
-  ];
 
   return (
     <>
@@ -88,7 +71,7 @@ export default function ExLifeCodingMain() {
         aria-labelledby="nav-list"
         subheader={
           <ListSubheader component="div" id="nested-list-subheader">
-            생활코딩 리덕스
+            모던 리액트 딥 다이브
           </ListSubheader>
         }
       >
@@ -99,11 +82,11 @@ export default function ExLifeCodingMain() {
           <ListItemIcon>
             <InboxIcon />
           </ListItemIcon>
-          <ListItemText primary="생활코딩 리덕스" />
+          <ListItemText primary="1장" />
           {openUtil ? <ExpandLess /> : <ExpandMore />}
         </ListItemButton>
         <Collapse in={openUtil} timeout="auto" unmountOnExit>
-          {arrayList.map(({ id, title }) => {
+          {exStarCodingItems.map(({ id, title }) => {
             return (
               <NavListItem
                 key={id}
@@ -115,13 +98,6 @@ export default function ExLifeCodingMain() {
           })}
         </Collapse>
       </List>
-
-      <Box
-        component="main"
-        sx={{ flexGrow: 1, overflow: "auto", m: "10px", p: "10px" }}
-      >
-        {arrayList[pageIndex].content}
-      </Box>
     </>
   );
 }

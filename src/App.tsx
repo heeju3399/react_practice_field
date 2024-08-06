@@ -1,12 +1,13 @@
 import { Routes, Route } from "react-router-dom";
 import HeejuMain from "./heeju/HeejuMain.tsx";
 import MainPage from "./MainPage.tsx";
-
+import "./App.css";
 import ExSubMain from "./sub/ExSubMain.tsx";
 import Home from "./sub/ExReacts/routers/src/page/Home.tsx";
 import Topics from "./sub/ExReacts/routers/src/page/Topics.tsx";
 import Contact from "./sub/ExReacts/routers/src/page/Contact.tsx";
 import Notfound from "./sub/ExReacts/routers/src/page/Notfound.tsx";
+import Modern_react_deepdive_Index from "./modernReactDeepDive/Index.tsx";
 
 function App() {
   return (
@@ -30,6 +31,10 @@ function App() {
         /> */}
         {/* <Route path="/sub/incontent/*" element={<ExSubMain />} /> */}
         <Route path="/sub/*" element={<ExSubMain />} />
+        <Route
+          path="/modern_react_deepdive/*"
+          element={<Modern_react_deepdive_Index />}
+        />
         {/* 아 중첩사용할라면 여기에 메인을 박아야함 */}
 
         {/* <Route path="/**" element={<** />} /> */}

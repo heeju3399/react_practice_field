@@ -10,6 +10,7 @@ import ExMuiMain from "./ExMui/MuiMain";
 import ExReactIndexPage from "./ExReacts";
 import ExModenReactDeepDive from "./ExModenReactDeepDive";
 import Adata_grid_my_guide_main from "./ExDataGrid/Adata_grid_my_guide/Index";
+import ExAxios from "./axios";
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -38,7 +39,7 @@ function CustomTabPanel(props: TabPanelProps) {
 }
 
 export default function ExSubMain() {
-  const [value, setValue] = useState(9);
+  const [value, setValue] = useState(4);
 
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
     setValue(newValue);
@@ -72,7 +73,7 @@ export default function ExSubMain() {
             <Tab label="data-grid" />
             <Tab label="Api" />
             <Tab label="KAKAO_LOGIN" />
-            <Tab label="모던-리액트-책" />
+            <Tab label="react_other" />
           </Tabs>
         </Box>
         <CustomTabPanel value={value} index={0}></CustomTabPanel>
@@ -86,7 +87,7 @@ export default function ExSubMain() {
           <ExMuiMain />
         </CustomTabPanel>
         <CustomTabPanel value={value} index={4}>
-          axio page
+          <ExAxios />
         </CustomTabPanel>
         <CustomTabPanel value={value} index={5}>
           <ExReactIndexPage />
